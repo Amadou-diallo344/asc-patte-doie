@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ASC Patte d’Oie | Kafountine</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-content {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .logo-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #f5c400;
+      color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border: 3px solid white;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f5c400;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #111 45%, #f5c400 45%);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #f5c400;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #f5c400;
+      color: #111;
+      padding: 13px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 55px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      font-size: 30px;
+    }
+
+    .section-title div {
+      width: 60px;
+      height: 4px;
+      background: #f5c400;
+      margin: 10px auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .match {
+      background: #111;
+      color: white;
+      border-radius: 18px;
+      padding: 30px;
+      text-align: center;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .match .teams {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .yellow {
+      color: #f5c400;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .gallery-box {
+      height: 180px;
+      background: #ddd;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-weight: bold;
+    }
+
+    .contact {
+      background: #111;
+      color: white;
+      border-radius: 20px;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    footer strong {
+      color: #f5c400;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-content">
+
+      <div class="logo">
+        <div class="logo-circle">AS</div>
+        <span>ASC PATTE D’OIE</span>
+      </div>
+
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#actualites">Actualités</a>
+        <a href="#matchs">Matchs</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="accueil">
+
+      <h1>ASC <span>Patte d’Oie</span></h1>
+
+      <p>
+        Football Club de Kafountine
+      </p>
+
+      <a href="#matchs" class="btn">
+        Voir les matchs
+      </a>
+
+    </section>
+
+
+    <section id="actualites">
+
+      <div class="section-title">
+        <h2>Actualités</h2>
+        <div></div>
+        <p>Les dernières informations de l’ASC Patte d’Oie</p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>📰 Actualités du club</h3>
+          <p>
+            Retrouvez ici les nouvelles, annonces et informations
+            concernant l’ASC Patte d’Oie.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>⚽ Vie sportive</h3>
+          <p>
+            Suivez les rencontres et les activités sportives
+            de notre club.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🟡⚫ Notre identité</h3>
+          <p>
+            L’ASC Patte d’Oie représente les couleurs jaune et noire
+            et porte fièrement les couleurs de Kafountine.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="matchs">
+
+      <div class="section-title">
+        <h2>Prochain match</h2>
+        <div></div>
+      </div>
+
+      <div class="match">
+
+        <p class="yellow">PROCHAIN MATCH</p>
+
+        <div class="teams">
+          ASC PATTE D’OIE
+          <br>
+          <span class="yellow">VS</span>
+          <br>
+          À CONFIRMER
+        </div>
+
+        <p>
+          📅 Date : À confirmer
+        </p>
+
+        <p>
+          📍 Lieu : À confirmer
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div class="section-title">
+        <h2>Notre club</h2>
+        <div></div>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>⚽ Équipe</h3>
+          <p>
+            Découvrez prochainement les joueurs et les différentes
+            catégories de l’ASC Patte d’Oie.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🏆 Palmarès</h3>
+          <p>
+            Cette rubrique sera consacrée aux titres, trophées
+            et grandes performances du club.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>📅 Calendrier</h3>
+          <p>
+            Retrouvez prochainement le calendrier complet
+            des rencontres.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="galerie">
+
+      <div class="section-title">
+        <h2>Galerie</h2>
+        <div></div>
+        <p>Les moments forts de l’ASC Patte d’Oie</p>
+      </div>
+
+      <div class="gallery">
+
+        <div class="gallery-box">Photo du club</div>
+
+        <div class="gallery-box">Match</div>
+
+        <div class="gallery-box">Équipe</div>
+
+        <div class="gallery-box">Supporters</div>
+
+        <div class="gallery-box">Célébration</div>
+
+        <div class="gallery-box">Kafountine</div>
+
+      </div>
+
+    </section>
+
+
+    <section id="contact">
+
+      <div class="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+          Pour toute information concernant
+          l’ASC Patte d’Oie, contactez-nous.
+        </p>
+
+        <br>
+
+        <p>
+          📍 Kafountine, Sénégal
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      © 2026 <strong>ASC Patte d’Oie</strong> — Kafountine
+    </p>
+
+    <p>
+      Site officiel du club
+    </p>
+
+  </footer>
+
+</body>
+</html>
